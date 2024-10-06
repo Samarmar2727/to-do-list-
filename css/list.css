@@ -1,0 +1,193 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+#starting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../imgs/list.jpg);
+    background-size: cover;
+
+}
+
+#icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#icon i {
+    font-size: 200px;
+    color: #783f04;
+    cursor: pointer;
+ 
+ }
+
+ 
+
+ #info {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+   
+
+ }
+
+ #info h3 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #a68212;
+    text-align: center;
+    padding-top: 100px;
+   
+
+
+ }
+  #tasks {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+  }
+
+ #task {
+    border: 1px solid #a68212;
+    width: 600px;
+    margin-bottom: 20px;
+    display: none;
+    
+  
+ 
+
+ }
+
+ #task caption {
+    color:white;
+    background-color: #783f04;
+    font-size: 30px;
+    padding: 10px 0;
+    margin: 10px 0;
+
+ }
+
+ #task caption  span {
+    color:#fff;
+    background-color: #a68212;
+    border-radius: 50%;
+    padding:  0 5px ;
+    margin-left: 200px;
+    cursor: pointer;
+  
+
+ }
+
+ #tableBody  {
+    color: #fff;
+    transition: box-shadow 0.2s
+ 
+ }
+
+ #tableBody  tr {
+   display: flex;
+   
+}
+
+ #tableBody tr:hover {
+   box-shadow : 0 3px 15px rgba(97, 97, 97, 0.843);
+}
+
+
+
+
+#tableBody tr td {
+   display: flex;
+   justify-content:space-between; 
+   align-items: center;
+   margin:10px ;
+   padding:5px 10px;
+   background-color:#a68212 ;
+   width: 100%;
+
+
+}
+
+#tableBody tr td.done {
+   background-color:#12a6578a ; 
+}
+
+#data-info {
+   width: 70%; 
+  
+}
+
+#data-info h2 {
+   flex: 1; /* النص يأخذ المساحة المتاحة */
+   margin-right: 10px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+ 
+}
+
+#data-icons {
+   width: 30%;
+}
+  
+
+
+
+#data-icons i {
+   padding: 10px;
+   line-height: 1;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+   font-size: 20px;
+   
+ }
+
+#data-icons i:nth-of-type(1) {
+    background-color: #783f04;
+   
+ 
+ }
+ 
+ #data-icons  i:nth-of-type(2) {
+    background-color: green;
+   
+ 
+ }
+ #data-icons i:nth-of-type(3) {
+    background-color: #cc0000;
+   
+ 
+ }
+
+
+
+
+
+ 
+@keyframes moveText {
+    0% {
+        transform: translateX(0); 
+    }
+    50% {
+        transform: translateX(100px); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+
+.animate-text {
+    display: inline-block;
+    animation: moveText 2s ease-in-out infinite; 
+    font-size: 24px; 
+    
+}
